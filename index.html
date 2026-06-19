@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Services Operations Coordinator Candidates — Badger Gutters</title>
+  <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=badgergutters.com&amp;sz=128" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&family=Open%20Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #C05C2E;
+      --primary-dark: #a34e27;
+      --primary-deeper: #864020;
+      --primary-soft: #C05C2E26;
+      --primary-light: #C05C2E14;
+      --accent-light: #d38d6d;
+      --dark: #1B2A4A;
+      --highlight: #1B2A4A;
+      --bg-light: #364460;
+      --bg-subtle: #49556e;
+      --bg-page: #192744;
+      --bg-card: #2d3b58;
+      --bg-card-hover: #3b4863;
+      --white: #FFFFFF;
+      --text-primary: #ffffff;
+      --text-mid: rgba(255,255,255,0.82);
+      --text-light: rgba(255,255,255,0.65);
+      --text-muted: rgba(255,255,255,0.5);
+      --on-dark: #ffffff;
+      --on-dark-mid: rgba(255,255,255,0.82);
+      --on-dark-light: rgba(255,255,255,0.65);
+      --on-dark-muted: rgba(255,255,255,0.15);
+      --border: rgba(255,255,255,0.14);
+      --border-strong: rgba(255,255,255,0.25);
+      --tag-bg: #C05C2E33;
+      --tag-color: #d38d6d;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);
+      --shadow-md: 0 1px 3px rgba(0,0,0,0.04), 0 8px 28px rgba(0,0,0,0.06);
+      --shadow-lg: 0 1px 3px rgba(0,0,0,0.04), 0 16px 48px rgba(0,0,0,0.08);
+      --radius: 16px;
+      --font-heading: 'Montserrat', sans-serif;
+      --font-body: 'Open Sans', sans-serif;
+      --font-meta: 'Poppins', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); font-size: 16px; color: var(--text-primary); background: var(--bg-page); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+    /* ── Scroll animations ── */
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── Hero ── */
+    .hero-top-bar { background: linear-gradient(90deg, var(--primary), var(--accent-light)); height: 4px; width: 100%; }
+    .hero { background: linear-gradient(155deg, var(--dark) 0%, var(--primary-deeper) 50%, var(--primary-dark) 100%); color: var(--white); padding: 72px 60px 64px; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; top: -40%; right: -15%; width: 700px; height: 700px; background: radial-gradient(circle, #1B2A4A12 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
+    .hero::after { content: ''; position: absolute; bottom: -30%; left: -10%; width: 500px; height: 500px; background: radial-gradient(circle, #C05C2E0d 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
+    .hero-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 2; }
+    .hero-brand { display: flex; align-items: center; gap: 16px; margin-bottom: 48px; }
+    .hero-brand .logo-img { height: 32px; width: auto; filter: brightness(0) invert(1); }
+    .hero-brand .logo-sep { width: 1px; height: 24px; background: rgba(255,255,255,0.25); }
+    .hero-brand .logo-sub { font-family: var(--font-meta); font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.5); }
+    .hero-eyebrow { display: inline-block; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 100px; padding: 6px 18px; font-family: var(--font-meta); font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 24px; color: var(--highlight); }
+    .hero h1 { font-family: var(--font-heading); font-size: 50px; font-weight: 400; line-height: 1.15; max-width: 720px; margin-bottom: 16px; letter-spacing: -0.02em; }
+    .hero h1 strong { font-weight: 700; }
+    .hero-sub { font-size: 17px; color: rgba(255,255,255,0.55); max-width: 660px; font-weight: 400; line-height: 1.7; margin-bottom: 44px; }
+    .hero-meta { display: flex; gap: 40px; flex-wrap: wrap; }
+    .hero-meta-item { display: flex; flex-direction: column; gap: 4px; }
+    .hero-meta-label { font-family: var(--font-meta); font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: #C05C2Ee6; }
+    .hero-meta-value { font-size: 14px; font-weight: 500; color: rgba(255,255,255,0.75); }
+
+    /* ── Editorial / Intro ── */
+    .editorial { max-width: 780px; margin: 0 auto; padding: 80px 40px; }
+    .editorial-label { font-family: var(--font-meta); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: var(--primary); margin-bottom: 20px; }
+    .editorial-text { font-size: 17px; line-height: 1.85; color: var(--text-mid); }
+    .editorial-text p { margin-bottom: 16px; }
+    .editorial-text p:last-child { margin-bottom: 0; }
+    .editorial-divider { width: 48px; height: 3px; background: var(--primary); border-radius: 2px; margin-top: 32px; }
+
+    /* ── Candidates section ── */
+    .candidates-section { background: var(--bg-light); padding: 80px 0; }
+    .candidates-header { text-align: center; padding: 0 24px 48px; }
+    .candidates-header h2 { font-family: var(--font-heading); font-size: 32px; font-weight: 700; color: var(--text-primary); margin-bottom: 8px; }
+    .candidates-header p { font-family: var(--font-meta); font-size: 14px; color: var(--text-light); }
+
+    .batch-switcher { display: flex; justify-content: center; align-items: center; gap: 8px; margin: 0 auto 40px; max-width: 800px; padding: 0 24px; }
+    .batch-switcher[data-count="1"] { display: none; }
+    .batch-btn { display: flex; align-items: center; gap: 8px; padding: 11px 22px; border: 2px solid var(--border); border-radius: 10px; background: var(--bg-card); font-family: var(--font-meta); font-size: 13px; font-weight: 600; color: var(--text-light); cursor: pointer; transition: all 0.2s ease; }
+    .batch-btn:hover { border-color: var(--primary); color: var(--text-primary); }
+    .batch-btn.active { background: var(--primary); border-color: var(--primary); color: #fff; }
+    .batch-count { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; background: var(--primary); color: white; font-size: 11px; font-weight: 700; }
+    .batch-btn.active .batch-count { background: var(--highlight); color: var(--dark); }
+    .batch-panel.hidden { display: none; }
+
+    .candidates { max-width: 900px; margin: 0 auto; padding: 0 24px 40px; display: flex; flex-direction: column; gap: 24px; }
+
+    /* ── Card design ── */
+    .candidate-card { max-width: 1100px; margin: 0 auto 40px; padding: 0 40px; }
+    .card { background: var(--bg-card); border-radius: 16px; overflow: hidden; border: none; box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 28px rgba(0,0,0,0.06); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 16px 48px rgba(0,0,0,0.1); }
+    .card.featured { box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 28px rgba(0,0,0,0.06), 0 0 0 1px #C05C2E33; }
+    .card-top { background: var(--dark); padding: 36px 44px; display: flex; justify-content: space-between; align-items: flex-start; }
+    .card-identity { display: flex; align-items: center; gap: 20px; }
+    .card-avatar { width: 56px; height: 56px; border-radius: 50%; background: var(--primary); border: none; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 700; color: white; flex-shrink: 0; font-family: var(--font-heading); }
+    .card-avatar.featured-avatar { background: var(--highlight); color: var(--dark); }
+    .card-name { font-family: var(--font-heading); font-size: 22px; font-weight: 700; color: white; margin-bottom: 4px; }
+    .card-location { font-size: 14px; color: var(--on-dark-mid); display: flex; align-items: center; gap: 6px; }
+    .card-badges { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+    .badge { font-family: var(--font-meta); font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 10px; border-radius: 100px; }
+    .badge-shortlisted { background: #C05C2E33; color: var(--primary); border: 1px solid #C05C2E66; }
+    .card-rate { text-align: right; }
+    .card-rate-amount { font-size: 24px; font-weight: 700; color: var(--primary); font-family: var(--font-heading); }
+    .card-rate-period { font-family: var(--font-meta); font-size: 10px; color: var(--on-dark-mid); text-transform: uppercase; letter-spacing: 1px; }
+    .tap-badge { display: inline-flex; align-items: center; gap: 5px; background: linear-gradient(135deg, #f59e0b, #d97706); color: white; padding: 4px 10px; border-radius: 6px; font-family: var(--font-meta); font-size: 11px; font-weight: 700; letter-spacing: 0.04em; }
+
+    .tags-row { padding: 0 44px 16px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag { display: inline-block; padding: 5px 14px; border-radius: 100px; font-family: var(--font-meta); font-size: 11px; font-weight: 600; }
+    .tag-filled { background: var(--tag-bg); color: var(--tag-color); }
+    .tag-filled:nth-child(3) { background: var(--highlight); color: var(--dark); }
+    .tag-outlined { background: var(--bg-subtle); color: var(--text-mid); border: 1.5px solid var(--border-strong); }
+
+    .card-body { padding: 40px 44px; color: var(--text-mid); }
+    .card-section { margin-bottom: 0; }
+    .card-section-title { font-family: var(--font-meta); font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--primary); margin-bottom: 16px; margin-top: 32px; }
+    .card-section-title:first-of-type { margin-top: 0; }
+    .card-narrative { font-size: 16px; line-height: 1.85; color: var(--text-mid); margin-bottom: 32px; font-style: italic; border-left: 3px solid var(--primary); padding-left: 20px; }
+    .card-narrative strong { color: var(--text-primary); font-weight: 600; font-style: normal; }
+    .experience-list { display: flex; flex-direction: column; gap: 20px; }
+    .exp-item { display: flex; gap: 16px; align-items: flex-start; }
+    .exp-dot-col { display: flex; flex-direction: column; align-items: center; padding-top: 6px; }
+    .exp-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--primary); flex-shrink: 0; }
+    .exp-line { width: 1px; flex: 1; background: #C05C2E33; margin-top: 6px; min-height: 30px; }
+    .exp-content { flex: 1; padding-bottom: 4px; }
+    .exp-role { font-size: 15px; font-weight: 600; color: var(--text-primary); }
+    .exp-company { font-size: 13px; color: var(--text-light); margin-top: 2px; }
+    .exp-highlight { font-size: 13px; color: var(--primary); margin-top: 4px; }
+    .tags-cluster { display: flex; flex-wrap: wrap; gap: 8px; }
+    .ctag { font-family: var(--font-meta); font-size: 11px; padding: 6px 14px; border-radius: 6px; background: var(--bg-subtle); color: var(--text-mid); }
+    .ctag-key { background: #C05C2E1a; color: var(--primary); font-weight: 600; }
+    .fit-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .fit-item { background: var(--bg-subtle); padding: 14px 16px; border-radius: 8px; border: 1px solid var(--border-strong); overflow: visible; word-wrap: break-word; }
+    .fit-label { font-size: 12px; color: var(--text-mid); line-height: 1.5; display: block; overflow: visible; white-space: normal; }
+    .strength-bars { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 24px; }
+    .bar-item { display: flex; flex-direction: column; gap: 6px; }
+    .bar-label { font-family: var(--font-meta); font-size: 12px; color: var(--text-mid); }
+    .bar-track { height: 5px; background: var(--bg-subtle); border-radius: 3px; overflow: hidden; }
+    .bar-fill { height: 100%; background: linear-gradient(90deg, var(--primary-dark), var(--primary)); border-radius: 3px; transition: width 1.5s ease; }
+    .card-actions { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--border); display: flex; align-items: center; gap: 14px; }
+    .video-intro-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 22px; background: transparent; border: 1.5px solid var(--primary); border-radius: 6px; color: var(--primary); font-family: var(--font-meta); font-size: 13px; font-weight: 600; letter-spacing: 0.3px; text-decoration: none; transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease; }
+    .video-intro-btn:hover { background: var(--primary); color: #fff; transform: translateY(-1px); }
+
+    .experience-item { display: flex; justify-content: space-between; align-items: baseline; padding: 6px 0; border-bottom: 1px solid var(--border); }
+    .exp-dates { font-size: 12px; color: var(--text-light); white-space: nowrap; }
+
+    .strength-list { padding-left: 18px; }
+    .strength-list li { font-size: 14px; color: var(--text-mid); margin-bottom: 8px; line-height: 1.6; }
+
+    .card-footer { display: flex; align-items: center; justify-content: space-between; padding: 16px 44px; background: var(--bg-subtle); border-top: 1px solid var(--border); }
+    .footer-note { font-size: 13px; color: var(--text-light); }
+    .footer-note strong { color: var(--text-primary); }
+    .btn-group { display: flex; gap: 8px; }
+    .btn-card { display: inline-flex; align-items: center; gap: 6px; padding: 9px 18px; border-radius: 8px; font-family: var(--font-meta); font-size: 13px; font-weight: 600; text-decoration: none; transition: all 0.15s; cursor: pointer; }
+    .btn-outline { background: var(--bg-card); color: var(--primary); border: 1.5px solid var(--primary); }
+    .btn-outline:hover { background: var(--tag-bg); }
+    .btn-primary-card { background: var(--primary); color: white; border: 1.5px solid var(--primary); }
+    .btn-primary-card:hover { background: var(--primary-dark); }
+    .btn-card svg { width: 15px; height: 15px; }
+    .btn-tap { background: linear-gradient(135deg, #f59e0b, #d97706); color: white; border: none; }
+
+    .card-recruiter-note { margin: 0; padding: 20px 24px; background: linear-gradient(135deg, #C05C2E0d, #C05C2E05); border-left: 3px solid var(--primary); border-radius: 0 10px 10px 0; }
+    .card-recruiter-note .recruiter-note-title { font-family: var(--font-meta); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--primary); margin-bottom: 8px; }
+    .card-recruiter-note p { font-size: 14px; color: var(--text-mid); line-height: 1.7; }
+
+    /* ── Comparison table ── */
+    .comparison-section { max-width: 1100px; margin: 20px auto 40px; padding: 0 40px; }
+    .comparison-table-wrap { overflow-x: auto; border-radius: var(--radius); box-shadow: var(--shadow-md); }
+    .comparison-table { width: 100%; border-collapse: collapse; background: var(--bg-card); font-size: 13px; color: var(--text-mid); border-radius: 12px; overflow: hidden; }
+    .comparison-table thead th { background: var(--dark); color: var(--primary); padding: 14px 16px; text-align: left; font-family: var(--font-meta); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+    .comparison-table thead th:first-child { border-radius: 14px 0 0 0; }
+    .comparison-table thead th:last-child { border-radius: 0 14px 0 0; }
+    .comparison-table tbody td { padding: 12px 16px; border-bottom: 1px solid var(--border); }
+    .comparison-table tbody tr:last-child td { border-bottom: none; }
+    .comparison-table tbody tr:hover { background: var(--bg-card-hover); }
+    .comparison-table .highlight-cell { background: #C05C2E1a; font-weight: 600; color: var(--primary); }
+
+    /* ── Advisor ── */
+    .advisor-section { max-width: 780px; margin: 0 auto; padding: 80px 40px 40px; }
+    .advisor-section-label { font-family: var(--font-meta); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: var(--primary); margin-bottom: 20px; text-align: center; }
+    .advisor-card { display: flex; gap: 28px; background: var(--bg-card); border-radius: 16px; padding: 36px; box-shadow: var(--shadow-md); border: 1px solid var(--border); }
+    .advisor-avatar { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid var(--primary); flex-shrink: 0; }
+    .advisor-info { flex: 1; }
+    .advisor-label { font-family: var(--font-meta); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--primary); margin-bottom: 4px; }
+    .advisor-name { font-family: var(--font-heading); font-size: 22px; font-weight: 700; color: var(--text-primary); }
+    .advisor-role { font-family: var(--font-meta); font-size: 13px; color: var(--text-light); margin-bottom: 12px; }
+    .advisor-summary { font-size: 14px; color: var(--text-mid); line-height: 1.75; }
+
+    /* ── Sagan info block ── */
+    .sagan-info { max-width: 780px; margin: 0 auto; padding: 0 40px 60px; }
+    .sagan-info-inner { display: flex; gap: 32px; justify-content: center; padding: 32px 0; border-top: 1px solid var(--border); }
+    .sagan-stat { text-align: center; }
+    .sagan-stat-number { font-family: var(--font-heading); font-size: 28px; font-weight: 700; color: var(--primary); }
+    .sagan-stat-label { font-family: var(--font-meta); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-light); margin-top: 4px; }
+
+    /* ── Footer CTA ── */
+    .footer-cta { background: var(--dark); padding: 72px 40px; text-align: center; }
+    .footer-cta h2 { font-family: var(--font-heading); font-size: 32px; font-weight: 400; color: white; margin-bottom: 12px; }
+    .footer-cta h2 strong { font-weight: 700; }
+    .footer-cta p { font-size: 16px; color: rgba(255,255,255,0.5); margin-bottom: 32px; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .footer-contact { display: inline-block; padding: 14px 36px; background: var(--primary); color: white; border-radius: 8px; font-family: var(--font-meta); font-size: 14px; font-weight: 600; text-decoration: none; letter-spacing: 0.3px; transition: background 0.2s ease, transform 0.15s ease; }
+    .footer-contact:hover { background: var(--primary-dark); transform: translateY(-1px); }
+
+    /* ── Footer ── */
+    .site-footer { text-align: center; padding: 32px; color: rgba(255,255,255,0.4); font-family: var(--font-meta); font-size: 12px; background: var(--dark); border-top: 1px solid rgba(255,255,255,0.08); }
+    .footer-logos { display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 12px; }
+    .footer-logos img { height: 22px; opacity: 0.5; }
+    .footer-x { font-size: 16px; color: rgba(255,255,255,0.2); }
+    .site-footer a { color: var(--primary); text-decoration: none; }
+
+    @media (max-width: 768px) {
+      .hero { padding: 48px 24px 48px; }
+      .hero h1 { font-size: 32px; }
+      .hero-meta { gap: 24px; }
+      .card-top { flex-direction: column; padding: 24px; gap: 16px; }
+      .card-body { padding: 24px; }
+      .candidate-card { padding: 0 16px; }
+      .editorial { padding: 48px 24px; }
+      .fit-grid { grid-template-columns: 1fr; }
+      .strength-bars { grid-template-columns: 1fr; }
+      .advisor-card { flex-direction: column; text-align: center; }
+      .comparison-table { font-size: 11px; }
+      .sagan-info-inner { flex-direction: column; gap: 20px; }
+      .footer-cta { padding: 48px 24px; }
+      .footer-cta h2 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero-top-bar"></div>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-brand">
+        <img class="logo-img" src="https://www.google.com/s2/favicons?domain=badgergutters.com&amp;sz=128" alt="Badger Gutters" />
+        <div class="logo-sep"></div>
+        <span class="logo-sub">Talent Selection</span>
+      </div>
+      <div class="hero-eyebrow">Sagan Talent Search</div>
+      <h1><strong>Home Services Operations Coordinator</strong> Candidates for Badger Gutters</h1>
+      <p class="hero-sub">Curated talent, vetted and matched to your specific needs. Each profile below has been carefully evaluated for role alignment, skills, and cultural fit.</p>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Candidates</span>
+          <span class="hero-meta-value">3 profiles</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Batch</span>
+          <span class="hero-meta-value">1 &middot; June 19, 2026</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Advisor</span>
+          <span class="hero-meta-value">Amimo Chaka</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="editorial fade-in">
+    <div class="editorial-label">Our Selection Rationale</div>
+    <div class="editorial-text">
+      <p>Hello Ben,</p><p></p><p>I handpicked this specific group because every single one of them has real, hands-on experience running dispatch and daily operations for busy US home services companies. They really stood out to us because they excel at solving messy scheduling puzzles on the fly and have the background needed to help you build out your operational processes from day one.</p><p></p><p>Take a look at their profiles below, and let me know who you’d like to meet so I can get interviews lined up for us.</p>
+    </div>
+    <div class="editorial-divider"></div>
+  </section>
+
+  <section class="candidates-section">
+    <div class="candidates-header fade-in">
+      <h2>Candidate Profiles</h2>
+      <p>Each candidate has been carefully selected and evaluated for this role.</p>
+    </div>
+
+    <div class="batch-switcher" id="batch-switcher" data-count="1">
+      <button class="batch-btn active" onclick="showBatch(1)" data-batch="1">
+        <span>Batch 1</span>
+        <span class="batch-count">3</span>
+      </button>
+    </div>
+
+    <div id="batch-1" class="batch-panel">
+      <div class="candidates">
+        
+    <div class="candidate-card">
+      <div class="card featured" id="candidate-0">
+        <div class="card-top">
+          <div class="card-identity">
+            <div class="card-avatar featured-avatar">AS</div>
+            <div>
+              <div class="card-name">Aremi S.</div>
+              <div class="card-location">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Mexico &middot; 10+ yrs Dispatch &amp; Ops
+              </div>
+              <div class="card-badges">
+                
+                <span class="badge badge-shortlisted">Pre-Shortlisted</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-rate">
+            <div class="card-rate-amount">$1,900/mo</div>
+            <div class="card-rate-period">USD / Month</div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          
+          <div class="card-narrative">
+            Aremi is the Swiss Army knife in this batch. She's already doing Ben's exact job right now, for a U.S. home services company, remotely, in EST-compatible hours. The ramp-up is almost nothing. She picks up the phone and runs.
+          </div>
+
+          
+          <div class="card-section-title">Experience Highlights</div>
+          <div class="experience-list">
+            
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Virtual Dispatcher &amp; Operations Coordinator — House Cleaning Franchise (Remote)</div>
+                <div class="exp-company">Sonrisa CX &middot; 2025 – Present</div>
+                <div class="exp-highlight">Managed full dispatch and scheduling workflow for a U.S.-based house cleaning franchise, coordinating team assignments based on availability, location, and job requirements — equivalent to running a field services dispatch board.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Team Leader — New York Life Insurance Campaign (Remote)</div>
+                <div class="exp-company">Tata Consultancy Services (TCS) &middot; 2021 – 2025</div>
+                <div class="exp-highlight">Led a high-volume inbound call center team for a major U.S. insurance brand, overseeing real-time queue management, schedule adherence, and live escalation handling.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Team Leader — Collections Operations (Remote)</div>
+                <div class="exp-company">Concord Servicing &middot; 2018 – 2019</div>
+                <div class="exp-highlight">Managed inbound customer service and outbound operations, overseeing real-time call routing, queue monitoring, and agent coordination across a high-volume team.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Sales &amp; Reservations Coordinator — U.S. Customer Operations</div>
+                <div class="exp-company">Internacional Cruise &amp; Excursions &middot; 2014 – 2016</div>
+                <div class="exp-highlight">Handled travel reservations, sales, and upsales for U.S.-based customers via phone, consistently converting inquiries into bookings and maximizing revenue per transaction through targeted upselling of cruise and excursion packages.</div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="card-section-title">Platforms &amp; Tools</div>
+          <div class="tags-cluster">
+            <span class="ctag ctag-key">Dispatch Board Management</span><span class="ctag ctag-key">Inbound Call Handling</span><span class="ctag ctag-key">Route Optimization</span><span class="ctag ctag-key">CRM Systems</span><span class="ctag ctag-key">Bilingual English/Spanish</span>
+            <span class="ctag">Real-Time Scheduling</span>
+          </div>
+
+          
+          <div class="card-section-title">Badger Gutters Fit Indicators</div>
+          <div class="fit-grid">
+            
+            <div class="fit-item">
+              <div class="fit-label">Currently dispatching field crews for a U.S. home services franchise → Ben needs someone who already understands crew coordination, not someone learning it</div>
+            </div>
+            <div class="fit-item">
+              <div class="fit-label">Native-level English from U.S. high school education → eliminates Ben's biggest dealbreaker around accent and local brand perception</div>
+            </div>
+            <div class="fit-item">
+              <div class="fit-label">Handles inbound calls, route changes, and unsold job follow-ups daily at Sonrisa CX → covers all three tasks Ben needs off his plate immediately</div>
+            </div>
+          </div>
+
+          
+          <div class="card-section-title">Strength Profile</div>
+          <div class="strength-bars">
+            
+            <div class="bar-item">
+              <div class="bar-label">Inbound Call Handling</div>
+              <div class="bar-track"><div class="bar-fill" style="width:92%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Route &amp; Schedule Coordination</div>
+              <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Customer Conversion &amp; Follow-Up</div>
+              <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">CRM Data Management</div>
+              <div class="bar-track"><div class="bar-fill" style="width:80%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">SOP Building from Scratch</div>
+              <div class="bar-track"><div class="bar-fill" style="width:68%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Home Services Industry Knowledge</div>
+              <div class="bar-track"><div class="bar-fill" style="width:78%"></div></div>
+            </div>
+          </div>
+
+          <div class="card-actions">
+            <a class="video-intro-btn" href="https://candidate-video.com/uploads/6303b31e-4188-4f40-b7ff-5b3ba387e0b1" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Watch Intro Video</a>
+            
+            
+          </div>
+        </div>
+
+        
+        <div class="card-footer">
+          <div class="card-recruiter-note">
+            <div class="recruiter-note-title">Recruiter Note</div>
+            <p>Of the three candidates, Aremi maps most cleanly to what Ben actually needs today. Not tomorrow. Today. She's dispatching field crews, handling inbound calls, rescheduling weather conflicts, following up on unsold jobs, and encouraging reviews. At Sonrisa CX, she manages 400+ monthly customers across multiple routes and reshuffles schedules in real time when techs go dark. That's Badger Gutters in six months, not just now. Her English is native-level. She attended Marietta High School in the U.S. No accent concern. Honest trade-off: she hasn't used Housecall Pro or Jobber specifically, and there are no SOPs at Badger yet, so she'll need to help build from scratch. But her interview showed she does exactly that. Solid all-arounder who can carry the load from day one at a price that fits...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="candidate-card">
+      <div class="card" id="candidate-1">
+        <div class="card-top">
+          <div class="card-identity">
+            <div class="card-avatar">CG</div>
+            <div>
+              <div class="card-name">Camoya G.</div>
+              <div class="card-location">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Jamaica &middot; 2 yrs Home Services &amp; Dispatch
+              </div>
+              <div class="card-badges">
+                
+                
+              </div>
+            </div>
+          </div>
+          <div class="card-rate">
+            <div class="card-rate-amount">$1,800/mo</div>
+            <div class="card-rate-period">USD / Month</div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          
+          <div class="card-narrative">
+            Camoya is the polished pick in this batch. She has done Ben's exact phone job, for a trades company, at scale, and hit a 98% CSAT doing it. Her English is sharp, her tone is warm, and she does not sound like a script reader.
+          </div>
+
+          
+          <div class="card-section-title">Experience Highlights</div>
+          <div class="experience-list">
+            
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Inbound Customer Service representative (Remote)</div>
+                <div class="exp-company">FLW Plumbing Solution &middot; September 2024 - May 2026</div>
+                <div class="exp-highlight">Confidently handle a high volume of 60+ inbound customer service calls per day with an energetic, helpful, and highly professional demeanor.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Dispatch Agent / Head of customer service (Remote)</div>
+                <div class="exp-company">James Electrical &middot; November 2023 - August 2024</div>
+                <div class="exp-highlight">Accurately book service calls directly into the company CRM, maintaining a 90%+ error-free entry rate to ensure field teams are dispatched correctly.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Customer service representative / BPO</div>
+                <div class="exp-company">Ibex Global &middot; January 2023 - August 2023</div>
+                <div class="exp-highlight">Handled 70+ daily customer interactions while maintaining a 95% first-contact resolution rate.</div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="card-section-title">Platforms &amp; Tools</div>
+          <div class="tags-cluster">
+            <span class="ctag ctag-key">ServiceTitan</span><span class="ctag ctag-key">FieldEdge</span><span class="ctag ctag-key">HubSpot</span><span class="ctag ctag-key">Inbound Calls</span><span class="ctag ctag-key">Dispatch</span>
+            <span class="ctag">CRM Entry</span>
+          </div>
+
+          
+          <div class="card-section-title">Badger Gutters Fit Indicators</div>
+          <div class="fit-grid">
+            
+            <div class="fit-item">
+              <div class="fit-label">98% CSAT at FLW Plumbing handling complaints → Ben's Charlotte homeowners expect warmth and competence, not a script</div>
+            </div>
+            <div class="fit-item">
+              <div class="fit-label">ServiceTitan and FieldEdge experience → Badger Gutters can plug her in without a software learning curve</div>
+            </div>
+            <div class="fit-item">
+              <div class="fit-label">90%+ error-free dispatch entry at James Electrical → Field crews get accurate job info every time, no costly miscommunications</div>
+            </div>
+          </div>
+
+          
+          <div class="card-section-title">Strength Profile</div>
+          <div class="strength-bars">
+            
+            <div class="bar-item">
+              <div class="bar-label">Inbound Phone Handling</div>
+              <div class="bar-track"><div class="bar-fill" style="width:93%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">CRM Accuracy</div>
+              <div class="bar-track"><div class="bar-fill" style="width:88%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Dispatch Coordination</div>
+              <div class="bar-track"><div class="bar-fill" style="width:82%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Customer De-escalation</div>
+              <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">SOP Building</div>
+              <div class="bar-track"><div class="bar-fill" style="width:60%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Schedule Optimization</div>
+              <div class="bar-track"><div class="bar-fill" style="width:72%"></div></div>
+            </div>
+          </div>
+
+          <div class="card-actions">
+            <a class="video-intro-btn" href="https://candidate-video.com/uploads/5eea38eb-f9d7-4568-ac50-81c5cfbf334d" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Watch Intro Video</a>
+            
+            
+          </div>
+        </div>
+
+        
+        <div class="card-footer">
+          <div class="card-recruiter-note">
+            <div class="recruiter-note-title">Recruiter Note</div>
+            <p>Camoya brings something specific that matters deeply for Ben: she has worked the phones for a U.S. plumbing company, handled dispatch for an electrical contractor, and maintained a 98% CSAT while fielding 60+ calls a day. That is not a call center background dressed up. That is trades-adjacent, customer-facing operations experience with real metrics behind it. Her ServiceTitan and FieldEdge familiarity means she does not need a software tutorial on week one. The honest trade-off: she has not built SOPs from scratch like Ilse, and her scheduling coordination experience is narrower than Aremi's. But for Ben's most urgent pain, getting the phone answered competently and warmly, Camoya is the most direct answer in this batch. At $1,800/month, she pays for herself fast.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="candidate-card">
+      <div class="card" id="candidate-2">
+        <div class="card-top">
+          <div class="card-identity">
+            <div class="card-avatar">IA</div>
+            <div>
+              <div class="card-name">Ilse A.</div>
+              <div class="card-location">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Mexico &middot; 
+              </div>
+              <div class="card-badges">
+                
+                
+              </div>
+            </div>
+          </div>
+          <div class="card-rate">
+            <div class="card-rate-amount">$2,500/mo</div>
+            <div class="card-rate-period">USD / Month</div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          
+          <div class="card-narrative">
+            Ilse is the builder in this batch. The other two can run Ben's current operation. Ilse can build what comes after it. She's writing SOPs and redesigning call flows for a U.S. home services company right now. She's not learning this world. She's already in it.
+          </div>
+
+          
+          <div class="card-section-title">Experience Highlights</div>
+          <div class="experience-list">
+            
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Operations &amp; Process Improvement Lead</div>
+                <div class="exp-company">Confidential U.S. Home Services Company &middot; February 2025 – Present</div>
+                <div class="exp-highlight">Reduced non-essential call volume by 90-100% via IVR redesign, reclaiming 40-60 hours monthly of productive capacity</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Junior Manager / Director's Assistant</div>
+                <div class="exp-company">TTEC – Booking.com &middot; January 2023 – February 2024</div>
+                <div class="exp-highlight">Supported campaign directors for Mexico and Canada markets, acting as operational liaison between departments</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Senior Team Leader</div>
+                <div class="exp-company">TTEC – Booking.com &middot; June 2021 – December 2022</div>
+                <div class="exp-highlight">Coached 5 newly promoted Team Leaders, each managing 12 agents (60 agents total under my guidance)</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Team Leader</div>
+                <div class="exp-company">TTEC – Best Buy &middot; March 2018 – May 2021</div>
+                <div class="exp-highlight">Managed a team of 60 customer service agents during peak seasons</div>
+              </div>
+            </div>
+          </div>
+
+          
+
+          
+          <div class="card-section-title">Badger Gutters Fit Indicators</div>
+          <div class="fit-grid">
+            
+            <div class="fit-item">
+              <div class="fit-label">Authored 15+ SOPs at a current U.S. home services company → Ben has zero SOPs. Ilse doesn't need to learn how to build them. She's doing it live.</div>
+            </div>
+            <div class="fit-item">
+              <div class="fit-label">Reduced call volume 90-100% via IVR redesign, reclaiming 40-60 hrs/month → Ben is fielding calls 7AM to 9PM. This is the exact problem she's already solved for another owner.</div>
+            </div>
+            <div class="fit-item">
+              <div class="fit-label">Managed 15+ subcontractors and generated work orders solo for 5+ months → When Ben adds a second crew, she's already done that coordination job under pressure.</div>
+            </div>
+          </div>
+
+          
+          <div class="card-section-title">Strength Profile</div>
+          <div class="strength-bars">
+            
+            <div class="bar-item">
+              <div class="bar-label">SOP &amp; Process Building</div>
+              <div class="bar-track"><div class="bar-fill" style="width:97%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Scheduling &amp; Route Coordination</div>
+              <div class="bar-track"><div class="bar-fill" style="width:78%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Inbound Call Handling</div>
+              <div class="bar-track"><div class="bar-fill" style="width:72%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Customer Communication</div>
+              <div class="bar-track"><div class="bar-fill" style="width:80%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">CRM &amp; Admin Systems</div>
+              <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Speed to Lead &amp; Sales Follow-up</div>
+              <div class="bar-track"><div class="bar-fill" style="width:70%"></div></div>
+            </div>
+          </div>
+
+          <div class="card-actions">
+            <a class="video-intro-btn" href="https://candidate-video.com/uploads/eaa0adaa-f143-4fb3-84f1-50f8e4711c4d" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Watch Intro Video</a>
+            
+            
+          </div>
+        </div>
+
+        
+        <div class="card-footer">
+          <div class="card-recruiter-note">
+            <div class="recruiter-note-title">Recruiter Note</div>
+            <p>Here's the honest trade-off with Ilse: she costs $500 more per month than Aremi, and $700 more than Camoya. That gap is real. But here's what you're buying. Aremi and Camoya will take the phones off Ben's plate. Ilse will take the phones off Ben's plate AND build the operating infrastructure he needs to add a second crew. She's written 15+ SOPs, redesigned an IVR, and held down project management solo during a leadership transition, all at a U.S. home services company, right now. If Ben's goal is just coverage, Aremi is the call. If his goal is to stop being the ceiling of his own business, Ilse is the investment. Higher ROI, longer runway. The builder DNA this company actually needs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+      <div class="fade-in">
+        
+  <div class="comparison-section">
+    <div class="section-label" style="padding-bottom:20px;">
+      <h2>Side-by-Side Comparison</h2>
+      <p>Key criteria at a glance to help you prioritize interviews.</p>
+    </div>
+    <div class="comparison-table-wrap">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Criteria</th>
+            <th>Aremi S.</th><th>Camoya G.</th><th>Ilse A.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Location</strong></td><td>Mexico</td><td>Jamaica</td><td>Mexico</td></tr>
+          <tr><td><strong>Experience</strong></td><td>10+ yrs Dispatch &amp; Ops</td><td>2 yrs Home Services &amp; Dispatch</td><td>See profile</td></tr>
+          <tr><td><strong>Key Employers</strong></td><td>Sonrisa CX, Tata Consultancy Services (TCS), Concord Servicing</td><td>FLW Plumbing Solution, James Electrical, Ibex Global</td><td>Confidential U.S. Home Services Company, TTEC – Booking.com, TTEC – Best Buy</td></tr>
+          <tr><td><strong>Core Strength</strong></td><td>Dispatch Board Management, Inbound Call Handling, Route Optimization</td><td>ServiceTitan, FieldEdge, HubSpot</td><td>See profile</td></tr>
+          <tr><td><strong>HRIS / Tools</strong></td><td>Dispatch Board Management, Inbound Call Handling, Route Optimization, CRM Systems, Bilingual English/Spanish</td><td>ServiceTitan, FieldEdge, HubSpot, Inbound Calls, Dispatch</td><td>See profile</td></tr>
+          <tr><td><strong>Languages</strong></td><td>English, Spanish</td><td>English</td><td>Spanish, English</td></tr>
+          <tr><td><strong>Education</strong></td><td>Computer Engineering (Unfinished) (Instituto Politécnico Nacional (IPN)); High School Diploma (U.S. Education) (Marietta High School)</td><td>Bachelors of Arts Degree in Business Administration, Minor in Communication (University of the Commonwealth Caribbean)</td><td>See profile</td></tr>
+          <tr><td><strong>Rate</strong></td><td>$1,900/mo</td><td class="highlight-cell">$1,800/mo</td><td>$2,500/mo</td></tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="advisor-section fade-in">
+    <div class="advisor-section-label">Your Talent Advisor</div>
+    <div class="advisor-card">
+      <img class="advisor-avatar" src="https://saganrecruitment.com/wp-content/uploads/2025/10/Amimo.jpg" alt="Amimo Chaka" />
+      <div class="advisor-info">
+        <div class="advisor-label">Sagan Talent Advisor</div>
+        <div class="advisor-name">Amimo Chaka</div>
+        <div class="advisor-role">Sagan · Recruitment Team — Talent Advisor</div>
+        <p class="advisor-summary">Amimo helps high-growth companies find and hire exceptional remote talent across Africa, Asia, and Latin America. She is your direct point of contact for scheduling interviews and coordinating next steps.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sagan-info">
+    <div class="sagan-info-inner">
+      <div class="sagan-stat">
+        <div class="sagan-stat-number">20,000+</div>
+        <div class="sagan-stat-label">Applications / month</div>
+      </div>
+      <div class="sagan-stat">
+        <div class="sagan-stat-number">2,000+</div>
+        <div class="sagan-stat-label">Placements made</div>
+      </div>
+      <div class="sagan-stat">
+        <div class="sagan-stat-number">30+</div>
+        <div class="sagan-stat-label">Countries</div>
+      </div>
+    </div>
+  </div>
+
+  <section class="footer-cta fade-in">
+    <h2>Ready to <strong>meet your next Home Services Operations Coordinator?</strong></h2>
+    <p>Tell us who you want to interview and we'll set it up within 24 hours.</p>
+    <a class="footer-contact" href="mailto:jesus.p@getsagan.com">Schedule Next Steps</a>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-logos">
+      <img src="https://www.google.com/s2/favicons?domain=badgergutters.com&sz=128" alt="Badger Gutters" style="height:22px;" onerror="this.style.display='none'" />
+      <span class="footer-x">&times;</span>
+      <img src="https://saganrecruitment.com/wp-content/uploads/2025/10/Sagan-Logo-2-e1759568299542.png" alt="Sagan" />
+    </div>
+    <p>Prepared by <a href="https://getsagan.com" target="_blank">Sagan</a> for Badger Gutters &middot; Home Services Operations Coordinator Search &middot; June 19, 2026</p>
+  </footer>
+
+  <script>
+    function showBatch(n) {
+      document.querySelectorAll('.batch-panel').forEach(p => p.classList.add('hidden'));
+      document.querySelectorAll('.batch-btn').forEach(b => b.classList.remove('active'));
+      var panel = document.getElementById('batch-' + n);
+      var btn = document.querySelector('[data-batch="' + n + '"]');
+      if (panel) panel.classList.remove('hidden');
+      if (btn) btn.classList.add('active');
+    }
+
+    /* Scroll animations */
+    (function() {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      document.querySelectorAll('.fade-in').forEach(function(el) { observer.observe(el); });
+
+      /* Animate candidate cards */
+      document.querySelectorAll('.candidate-card').forEach(function(el) {
+        el.classList.add('fade-in');
+        observer.observe(el);
+      });
+
+      /* Animate strength bars on scroll */
+      var barObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            var fills = entry.target.querySelectorAll('.bar-fill');
+            fills.forEach(function(fill) {
+              var w = fill.style.width;
+              fill.style.width = '0%';
+              setTimeout(function() { fill.style.width = w; }, 100);
+            });
+            barObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      document.querySelectorAll('.strength-bars').forEach(function(el) { barObserver.observe(el); });
+    })();
+  </script>
+</body>
+</html>
